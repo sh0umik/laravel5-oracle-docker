@@ -1,6 +1,6 @@
 FROM php:7-apache
 
-MAINTAINER Amin Mkh <mukh_amin@yahoo.com> 
+MAINTAINER Fahim Shariar <fahim.shoumik@gmail.com> 
 
 # installing required stuff
 RUN apt-get update \
@@ -26,7 +26,7 @@ RUN ln -s /etc/apache2/mods-available/rewrite.load /etc/apache2/mods-enabled/rew
 
 # Oracle instantclient
 
-	# copy oracle files
+# copy oracle files
 ADD oracle/instantclient-basic-linux.x64-12.1.0.2.0.zip /tmp/
 ADD oracle/instantclient-sdk-linux.x64-12.1.0.2.0.zip /tmp/
 ADD oracle/instantclient-sqlplus-linux.x64-12.1.0.2.0.zip /tmp/

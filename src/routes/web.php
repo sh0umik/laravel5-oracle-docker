@@ -12,7 +12,10 @@
 */
 
 Route::get('/', function () {
-    $sh = DB::connection('oracle')->table('superheroes')->get();
+    return view('welcome');
+});
 
+Route::get('/test', function () {
+    $sh = DB::connection('oracle')->table('superheroes')->get();
     var_dump($sh);
 });
