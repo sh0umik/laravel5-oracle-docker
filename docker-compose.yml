@@ -12,6 +12,7 @@ web:
 
 oracle:
   image: sath89/oracle-xe-11g
+  hostname: oracle-php
   container_name: oracle-php
   ports:
     - "1521:1521"
